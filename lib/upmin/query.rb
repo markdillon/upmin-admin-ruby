@@ -16,7 +16,7 @@ module Upmin
     end
 
     def results
-      return klass.ransack(search_options).result(distinct: true)
+      return klass.ransack(search_options).result(distinct: false)
     end
 
     def paginated_results
